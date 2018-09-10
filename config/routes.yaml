@@ -1,0 +1,16 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+back:
+    prefix: /{_locale}/TestDoctrine
+    resource: './routes/route.yaml'
+    requirements:
+        _locale: en|fr
+
+translation:
+    path:     /{_locale}/traduction/{name}
+    defaults:
+        _controller: App\Controller\AffichageDonnee:translation
+    requirements:
+        _locale: en|fr

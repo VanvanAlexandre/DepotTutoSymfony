@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+{% for card  in list_card %}
+    <fieldset>
+        <div class="form-group">
+            {{ include("card.html.twig") }}
+        <div>
+    </fieldset>
+{% endfor %}
+{% if app.user is not null %}
+{{ include("user.html.twig") }}
+{{ include("panier.html.twig") }}
+{% endif %}
+{% endblock %}

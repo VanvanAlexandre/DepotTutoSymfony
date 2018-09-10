@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">{% endblock %}
+</head>
+<body>
+{% if app.user is not null %}
+    <h3>{{ 'Salut'|trans }} {{ app.user.username }} !!</h3>
+    <a href="{{ path('logout') }}">{{ 'Deconnexion'|trans }}</a>
+{% else %}
+    <a href="{{ path('login') }}">{{ 'Connexion'|trans }}</a>
+    <a href="{{ path('inscription') }}">{{ 'Inscription'|trans }}</a>
+{% endif %}
+<a class="button button--primary" href="{{ path('add') }}">{{ 'Ajouter'|trans }} {{ 'une carte'|trans }}</a>
+{% block body %}
+{% endblock %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

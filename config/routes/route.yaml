@@ -1,0 +1,27 @@
+affichage:
+    path: /
+    defaults: { _controller: 'App\Controller\AffichageDonnee::afficheAction'}
+
+add:
+    path: /add
+    defaults: { _controller: 'App\Controller\AddController::add'}
+
+ajoutPanier:
+    path: /AjoutPanier/{id}
+    defaults: { _controller: 'App\Controller\AffichageDonnee::addPanier'}
+
+login:
+    path: /login
+    defaults:
+        _controller: 'App\Controller\User\SecurityController::loginAction'
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
+
+inscription:
+    path: /inscription
+    defaults:
+        _controller: 'App\Controller\User\InscritpionController::inscriptionAction'

@@ -1,0 +1,30 @@
+<ul>Name : {{ card.name }}
+    <div>
+        {% if card.image is not null %}
+            <img class="img-fluid"
+                 src="{{ asset(card.image.webPath) }}"
+                 alt="{{ card.image.nom }}"
+                 id="image{{ card.id }}"
+                 height="60"
+                 onMousedown="document.getElementById('image{{ card.id }}').style.height='550px';"
+                 onClick="document.getElementById('image{{ card.id }}').style.height='60px';"
+            />
+        {% endif %}
+    </div>
+    <li class="list-group-item">Type : {{ card.type }}</li>
+    <li class="list-group-item">Atk : {{ card.atk }}</li>
+    <li class="list-group-item">Def : {{ card.def }}</li>
+    <li class="list-group-item"><strong>{{ 'Prix'|trans }} : {{ card.prix }} €</strong></li>
+    <li class="list-group-item"><strong>{{ 'Quantité'|trans }} : {{ card.quantity }}</strong>
+        {% if card.quantity <100 %}
+                <u>Attention il n'en reste plus beaucoup</u>
+        {% else %}
+            <sub> <s> Fait gaffe, il en reste beaucoup, mais quand même il faut que tu achète.</s></sub>
+        {% endif %}
+        <div id="Ajout">
+           <a href="{{ path('ajoutPanier', {'id': card.id } )  }}">{{ 'Ajouter'|trans }} {{ 'au Panier'|trans }}</a>
+        </div>
+    </li>
+
+</ul>
+
