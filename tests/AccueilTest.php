@@ -11,5 +11,6 @@ class AccueilTest extends TestCase
         $a=2;
         $this->assertTrue(true);
         $this->assertEquals(1,$a);
+        //test commit
     }
 }
