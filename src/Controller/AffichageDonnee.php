@@ -20,7 +20,7 @@ class AffichageDonnee extends AbstractController
         $nc=null;
         $list_Card= $this->recupListCard();
         if($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-    dump($this->getUser());
+            dump($this->getUser());
             $nc = $this->nbCardParPanier($this->getUser());
             $panier = $this->recupPanier($this->getUser()->getId());
         }

@@ -43,10 +43,12 @@ class AddControllerTest extends TestParent
         //redirection su l'accueil pour compter les cartes
         $crawler = $this->getClient()->request('GET', '/fr/TestDoctrine/');
         $countOfItemsAfterAdd = count($crawler->filter('.crw-items > tr'));
-        var_dump($countOfItemsAfterAdd);
 
         $this->assertTrue($countOfItemsAfterAdd > $countOfItemsBeforeAdd);
-
+        $doctrine= self::$kernel->getContainer()->get('doctrine');
+        $card = $doctrine->getRepository('App\Entity\Card')->findOneByName('Droll & Lock Bird');
+        $doctrine->getManager()->remove($card);
+        $doctrine->getManager()->flush();
         //compté le nb de carte avant et après
     }
 
