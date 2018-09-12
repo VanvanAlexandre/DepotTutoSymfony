@@ -14,6 +14,13 @@
         <env name="APP_DEBUG" value="1" />
         <env name="APP_SECRET" value="s$cretf0rt3st" />
         <env name="SHELL_VERBOSITY" value="-1" />
+        <env name="DATABASE_URL_TEST" value="mysql://root:@mysql:3306/test" />
+        <env name="DATABASE_NAME" value="test"/>
+        <env name="DATABASE_HOST" value="127.0.0.1"/>
+        <env name="DATABASE_URL" value="mysql://db_user:db_password@127.0.0.1:3306/db_name"/>
+        <env name="DATABASE_USER" value="root"/>
+        <env name="DATABASE_PWD" value=""/>
+
         <!-- define your env variables for the test env here -->
     </php>
 

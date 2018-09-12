@@ -28,6 +28,7 @@ class AddController extends AbstractController
         if($form->isSubmitted() && $form->isValid()){
             $em = $this->getDoctrine()->getManager();
             $em->persist($card);
+            //dump($form);
             $em->flush();
             $this->addFlash('notice','Your card has been saved');
             return $this->redirect($request->getUri());

@@ -37,6 +37,7 @@ class CardImage
 
 
 
+
     /**
      * @ORM\PrePersist()
      * @ORM\PreUpdate()
@@ -45,11 +46,11 @@ class CardImage
         if(null == $this->file){
             return;
         }
-        dump($this->file);
+        //dump($this->file);
         $this->path = $this->file->guessExtension();
         $this->nom = $this->file->getClientOriginalName();
-        dump($this->path);
-        dump($this->nom);
+        //dump($this->path);
+       // dump($this->nom);
     }
 
 
