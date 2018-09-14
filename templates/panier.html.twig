@@ -1,9 +1,5 @@
 {% if panier is not null %}
-<div id="panier"> Il a {{ nbcard }} carte(s) dans son panier !
-    {% for item in panier.ListeCard %}
-        <div>Nom carte : {{ item.name }} => {{ item.prix }} €</div>
-    {% endfor %}
-</div>
+{{ panierDisplay(panier) }}
 {% else %}
     <div id="pas panier">OH :O ta pas de panier !!</div>
 {% endif %}
