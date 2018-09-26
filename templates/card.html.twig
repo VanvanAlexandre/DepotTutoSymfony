@@ -17,9 +17,9 @@
     <li class="list-group-item"><strong>{{ 'Prix'|trans }} : {{ card.prix }} €</strong></li>
     <li class="list-group-item"><strong>{{ 'Quantité'|trans }} : {{ card.quantity }}</strong>
         {% if card.quantity <100 %}
-                <u>Attention il n'en reste plus beaucoup</u>
+                <u>Attention il n'en reste plus beaucoup !</u>
         {% else %}
-            <sub> <s> Fait gaffe, il en reste beaucoup, mais quand même il faut que tu achète.</s></sub>
+            <sub> <s> Il en reste beaucoup, donc fait toi plaisir, achète.</s></sub>
         {% endif %}
         <div id="Ajout">
            <a href="{{ path('ajoutPanier', {'id': card.id } )  }}">{{ 'Ajouter'|trans }} {{ 'au Panier'|trans }}</a>

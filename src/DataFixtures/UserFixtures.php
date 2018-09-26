@@ -13,10 +13,10 @@ class UserFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
         $user = new User();
-        $user->setNom('McCanada');
+        $user->setNom('McCanada OUI');
         $user->setPrenom('Amber');
         $user->setPassword('patate');
-        $user->setAge(18);
+        $user->setAge(19);
         $user->setSalt('');
         $user->setUsername('amber');
         $user->setRoles(array('ROLE_USER'));
