@@ -16,7 +16,7 @@ class UserFixtures extends Fixture
         $user->setNom('McCanada');
         $user->setPrenom('Amber');
         $user->setPassword('patate');
-        $user->setAge(18);
+        $user->setAge(19);
         $user->setSalt('');
         $user->setUsername('amber');
         $user->setRoles(array('ROLE_USER'));
