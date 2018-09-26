@@ -1,7 +1,7 @@
 {% extends "layout.html.twig" %}
 {% block body %}
     {{ form(form) }}
-    <a class="button button--secondary" href="{{ path('affichage') }}">Retourner à l'accueil</a>
+    <a class="button button--secondary" href="{{ path('affichage') }}">Retourner à l'accueil, OUI</a>
 
     {% for message in app.flashes('notice') %}
         <div class="flash-notice">
