@@ -66,8 +66,8 @@
           <entry key="gitignore" value="14" />
           <entry key="php" value="11765" />
           <entry key="route" value="102" />
-          <entry key="twig" value="1239" />
-          <entry key="txt" value="389" />
+          <entry key="twig" value="2447" />
+          <entry key="txt" value="396" />
           <entry key="user" value="229" />
           <entry key="yaml" value="2022" />
           <entry key="yml" value="17" />
@@ -77,8 +77,8 @@
         <counts>
           <entry key=".env file" value="5" />
           <entry key="PHP" value="11765" />
-          <entry key="PLAIN_TEXT" value="404" />
-          <entry key="Twig" value="1568" />
+          <entry key="PLAIN_TEXT" value="411" />
+          <entry key="Twig" value="2776" />
           <entry key="XML" value="155" />
           <entry key="YAML" value="2141" />
         </counts>
@@ -158,8 +158,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/translation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -499,7 +499,7 @@
       <workItem from="1537272688179" duration="1596000" />
       <workItem from="1537343224955" duration="45000" />
       <workItem from="1537517412396" duration="725000" />
-      <workItem from="1537880881175" duration="3914000" />
+      <workItem from="1537880881175" duration="5003000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1536653492301</created>
@@ -564,11 +564,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537952438890</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="OUI :0">
+      <created>1537952741257</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537952741257</updated>
+    </task>
+    <task id="LOCAL-00011" summary="OUI :000">
+      <created>1537952756009</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1537952756009</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135266000" />
+    <option name="totallyTimeSpent" value="136355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
@@ -611,7 +625,9 @@
     <MESSAGE value="OUI" />
     <MESSAGE value="OUI fixture" />
     <MESSAGE value="OUI fixture :O" />
-    <option name="LAST_COMMIT_MESSAGE" value="OUI fixture :O" />
+    <MESSAGE value="OUI :0" />
+    <MESSAGE value="OUI :000" />
+    <option name="LAST_COMMIT_MESSAGE" value="OUI :000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/translation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
